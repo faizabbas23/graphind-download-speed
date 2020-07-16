@@ -1,0 +1,29 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import speedtest
+
+st = speedtest.Speedtest()
+
+
+
+while True:
+    d_speed = st.download()
+    x = d_speed/1024/1024
+
+    
+    
+
+y1 = 0
+
+while (count < 200 ):
+   
+   y1 = count + 1
+
+plt.figure()
+plt.plot(x, y1)  
+
+plt.xlabel("times checked")
+plt.ylabel("download speed")
+plt.title("chart")
+
+plt.show()
